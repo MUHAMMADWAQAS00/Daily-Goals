@@ -1,31 +1,31 @@
-#include <iostream>
-using namespace std;
-
-int main() {
-    int number;
-    int oddCount = 0, evenCount = 0;
-
-    cout << "Enter numbers (0 to stop): " << endl;
-
-    while (true) {
-        cin >> number;
-
-        if (number == 0) {
-            break; // Stop the loop when the user enters 0
-        }
-
-        if (number % 2 == 0) {
-            evenCount++; // Increment even count
-        } else {
-            oddCount++; // Increment odd count
-        }
-    }
-
-    cout << "Total even numbers: " << evenCount << endl;
-    cout << "Total odd numbers: " << oddCount << endl;
-
-    return 0;
-}
+//#include <iostream>
+//using namespace std;
+//
+//int main() {
+//    int number;
+//    int oddCount = 0, evenCount = 0;
+//
+//    cout << "Enter numbers (0 to stop): " << endl;
+//
+//    while (true) {
+//        cin >> number;
+//
+//        if (number == 0) {
+//            break; // Stop the loop when the user enters 0
+//        }
+//
+//        if (number % 2 == 0) {
+//            evenCount++; // Increment even count
+//        } else {
+//            oddCount++; // Increment odd count
+//        }
+//    }
+//
+//    cout << "Total even numbers: " << evenCount << endl;
+//    cout << "Total odd numbers: " << oddCount << endl;
+//
+//    return 0;
+//}
 
 //#include <iostream>
 //using namespace std;
@@ -89,50 +89,53 @@ int main() {
 //
 //    return 0;
 //}
-//#include <iostream>
-//using namespace std;
-//
-//int main() {
-//    int marks;
-//    char grade;
-//    char choice;
-//
-//    do {
-//        // Prompt user to enter marks
-//        cout << "Enter marks (0-100): ";
-//        cin >> marks;
-//
-//        // Validate input
-//        if (marks < 0 || marks > 100) {
-//            cout << "Invalid input. Marks should be between 0 and 100." << endl;
-//        } else {
-//            // Determine grade using if-else
-//            if (marks >= 90) {
-//                grade = 'A';
-//            } else if (marks >= 80) {
-//                grade = 'B';
-//            } else if (marks >= 70) {
-//                grade = 'C';
-//            } else if (marks >= 60) {
-//                grade = 'D';
-//            } else {
-//                grade = 'F';
-//            }
-//
-//            // Display grade
-//            cout << "Grade: " << grade << endl;
-//        }
-//
-//        // Ask if the user wants to calculate again
-//        cout << "Do you want to calculate grades for another student? (y/n): ";
-//        cin >> choice;
-//
-//    } while (choice == 'y' || choice == 'Y'); // Repeat if user chooses 'y' or 'Y'
-//
-//    cout << "Exiting the program. Goodbye!" << endl;
-//
-//    return 0;
-//}
+#include <iostream>
+using namespace std;
+
+int main() {
+    int marks;
+    char grade;
+    char choice;
+
+    do {
+        // Prompt user to enter marks
+        cout << "Enter marks (0-100): ";
+        cin >> marks;
+
+        // Validate input
+        if (marks < 0 || marks > 100) {
+            cout << "Invalid input. Marks should be between 0 and 100." << endl;
+        } else {
+            // Determine grade using if-else
+            if (marks >= 90) {
+                grade = 'A';
+            } else if (marks >= 80) {
+                grade = 'B';
+            } else if (marks >= 70) {
+                grade = 'C';
+            } else if (marks >= 60) {
+                grade = 'D';
+            } else {
+                grade = 'F';
+            }
+
+            // Display grade
+            cout << "Grade: " << grade << endl;
+        }
+
+        // Ask if the user wants to calculate again
+        cout << "Do you want to calculate grades for another student? (y/n): ";
+        cin >> choice;
+
+    } while (choice == 'y' || choice == 'Y');
+	if(choice != 'y' || 'Y'){
+		cout<<"invalid choice"<<endl;
+	}// Repeat if user chooses 'y' or 'Y'
+
+    cout << "Exiting the program. Goodbye!" << endl;
+
+    return 0;
+}
 
 //#include <iostream>
 //using namespace std;
